@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv='Content-Type'>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/js.js"></script>
+<title>Game</title>
+</head>
+
+<body>
+
+<div class="control">
+
+  <button id="start">Начать</button>
+  <button id="stop">Остановить</button>
+  <a>Time: </a><a id="second">60</a>
+  <a>Record: </a><a id="record">0</a>
+</div>
+
+
+
+<div class="wrap">
+	
+<svg id="mySVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect onclick="this.remove();"></rect>
+</svg>
+</div>
+<div>
+<table id="TBODY">
+<tr>
+  <th>Name</th>
+  <th>Record</th>
+</tr>
+</table> 
+</div>
+<button data-toggle="modal" data-target="#myModal_1" class="lel" id="superbutton" top='0' overflow='none'></button>
+<div class="modal fade" id="myModal_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Game over</h4>
+                </div>
+                <div class="modal-body">
+                    <p><b>Your name:</b><br>
+   <input type="text" size="40" id="fillme">
+  </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="ok">Ok</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+</body>
+
+</html>
